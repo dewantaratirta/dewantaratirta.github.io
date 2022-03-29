@@ -1,16 +1,24 @@
 {
-  "name": "@example/starter",
+  "name": "dewantaratirta.github.io",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview"
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "package": "svelte-kit package",
+    "preview": "svelte-kit preview",
+    "prepare": "svelte-kit sync",
+    "compile": "npm run build && npm run preview"
   },
   "devDependencies": {
-    "@astrojs/svelte": "^0.0.2",
-    "astro": "^0.25.4",
-    "svelte": "^3.46.4"
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/adapter-static": "^1.0.0-next.29",
+    "@sveltejs/kit": "next",
+    "svelte": "^3.46.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "@fontsource/fira-mono": "^4.5.0",
+    "@lukeed/uuid": "^2.0.0",
+    "cookie": "^0.4.1"
   }
 }
