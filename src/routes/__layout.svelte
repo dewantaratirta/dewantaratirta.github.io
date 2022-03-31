@@ -4,27 +4,14 @@
   import "../app.css";
 </script>
 
-<div id="maincontainer">
+<div id="maincontainer" class="flex flex-col">
   <Header />
-  <main>
-    <slot />
-  </main>
+  <slot />
 </div>
 
 <style>
-  :global(body) {
-    max-width: 1700px;
-    margin: 10px auto;
-    border: 1px solid var(--text-primary);
-  }
-
-  :global(body > *:not(:last-child)) {
-    border-bottom: 1px solid var(--text-primary);
-  }
-
-  @media (max-width: 1699px) {
-    :global(body) {
-      margin: 10px;
-    }
+  #maincontainer {
+    width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
   }
 </style>

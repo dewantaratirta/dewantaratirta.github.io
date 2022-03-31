@@ -2,14 +2,16 @@
 	margin:0px;
 	padding:0px;
 }
-
+body{
+	padding:10px;
+}
 body#light{
 	--background:#fef6eb;
 	--text-primary: #128349;
 	--filter-url: url("#128349");
 }
 body#dark{
-	--background:#128349;
+	--background:#284e3b;
 	--text-primary: #fef6eb;
 	--filter-url: url("#fef6eb");
 }
@@ -21,6 +23,13 @@ body{
 body *{
 	color:var(--text-primary);
 }
+
+#maincontainer{
+	border:1px solid var(--text-primary);
+}
+#maincontainer > *:not(:last-child) {
+    border-bottom: 1px solid var(--text-primary);
+  }
 
 img{
 	position: relative;
