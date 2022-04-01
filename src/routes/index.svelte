@@ -7,7 +7,7 @@
   <title>dewantaratirta.github.io</title>
 </svelte:head>
 
-<section id="main" class="flex flex-col">
+<section id="main" class="flex">
   <div>
     <h2>Hello world</h2>
   </div>

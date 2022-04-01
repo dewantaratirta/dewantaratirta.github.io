@@ -25,11 +25,11 @@ body *{
 }
 
 #maincontainer{
-	border:1px solid var(--text-primary);
+	/* border:1px solid var(--text-primary); */
 }
 #maincontainer > *:not(:last-child) {
     border-bottom: 1px solid var(--text-primary);
-  }
+}
 
 img{
 	position: relative;
@@ -42,10 +42,34 @@ img::after{
 }
 
 /* FONTS */
-
 .font-mono{
 	font-family: 'IBM Plex Mono', monospace;
 }
 .font-chivo{
 	font-family: 'Chivo', sans-serif;
+}
+
+/* BORDER */
+border-r{
+	border-right: 1px solid var(--text-primary);
+}
+border-b{
+	border-bottom: 1px solid var(--text-primary);
+}
+
+/* bg */
+.invert{
+	background: var(--text-primary);
+	color: var(--background);
+	border-color:var(--text-primary);
+}
+.invert > *{
+	background:inherit;
+	color:inherit;
+	border-color: inherit;
+}
+
+#maincontainer #main{
+	height:100%;
+	width:100%;
 }

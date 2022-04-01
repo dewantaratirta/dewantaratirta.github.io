@@ -1,14 +1,56 @@
 <script>
-  import { page } from "$app/stores";
-  import logo from "./svelte-logo.svg";
+  import gsap from "gsap";
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    var turbVal = { val: 0.000001 };
+    var turbValX = { val: 0.000001 };
+    var turb = document.querySelectorAll("#blurMe feTurbulence")[0];
+    let logo = document.getElementById("logo");
+
+    var btTl = gsap.timeline({
+      paused: true,
+      onUpdate: function () {
+        turb.setAttribute("baseFrequency", turbVal.val + " " + turbValX.val);
+      },
+      onComplete: function () {
+        btTl.reverse();
+      },
+      onReverseComplete: function () {
+        btTl.restart();
+      },
+      onPause: function () {
+        console.log("pause");
+      },
+    });
+    btTl.to(turbValX, { val: 0.4, ease: "Power0.easeNone", duration: 0.4 }, 0);
+    btTl.to(turbVal, { val: 0.001, ease: "Power0.easeNone", duration: 0.1 }, 0);
+
+    // on hover
+    logo.addEventListener("mouseenter", (ev) => {
+      btTl.play();
+    });
+
+    logo.addEventListener("mouseleave", (ev) => {
+      btTl.pause();
+      turb.setAttribute("baseFrequency", "0 0");
+    });
+  });
 </script>
 
 <div id="header">
   <!-- <img src={logo} alt="SvelteKit" /> -->
   <!-- <li class:active={$page.url.pathname === "/"}><a sveltekit:prefetch href="/">Home</a></li> -->
+  <div id="logo-container">
+    <svg width="1" height="1" xmlns="http://www.w3.org/2000/svg" id="f">
+      <filter id="blurMe">
+        <feTurbulence type="fractalNoise" baseFrequency="0.000001" numOctaves="1" result="warp" />
+        <feOffset dx="0" dy="0" result="warpOffset" />
+        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset" />
+      </filter>
+    </svg>
 
-  <div class="text-4xl font-bold" id="logo">
-    <svg width="auto" height="54" viewBox="0 0 90 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg height="54" id="logo" class="link" viewBox="0 0 90 29" fill="none" xmlns="http://www.w3.org/2000/svg" filter="url(#blurMe)">
       <mask id="path-1-outside-1_2_6" maskUnits="userSpaceOnUse" x="0" y="0" width="90" height="29" fill="var(--text-primary)">
         <rect fill="var(--text-primary)" width="90" height="29" />
         <path
@@ -93,7 +135,7 @@
     </svg>
   </div>
   <div class="flex justify-center items-center">
-    <div id="right" class="text-2xl font-chivo font-bold text-right">Menu</div>
+    <div id="right" class="text-2xl font-chivo font-bold text-right link">Menu</div>
   </div>
 </div>
 
@@ -109,5 +151,13 @@
   }
   #right {
     cursor: pointer;
+  }
+  #logo-container {
+    position: relative;
+  }
+  #f {
+    position: absolute;
+    top: 0px;
+    left: 0px;
   }
 </style>
