@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
 	margin:0px;
 	padding:0px;
@@ -24,9 +28,7 @@ body *{
 	color:var(--text-primary);
 }
 
-#maincontainer{
-	/* border:1px solid var(--text-primary); */
-}
+
 #maincontainer > *:not(:last-child) {
     border-bottom: 1px solid var(--text-primary);
 }
@@ -42,18 +44,18 @@ img::after{
 }
 
 /* FONTS */
-.font-mono{
+/* .font-mono{
 	font-family: 'IBM Plex Mono', monospace;
 }
 .font-chivo{
 	font-family: 'Chivo', sans-serif;
-}
+} */
 
 /* BORDER */
-border-r{
+.border-r{
 	border-right: 1px solid var(--text-primary);
 }
-border-b{
+.border-b{
 	border-bottom: 1px solid var(--text-primary);
 }
 

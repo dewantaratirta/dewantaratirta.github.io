@@ -1,6 +1,7 @@
 <script context="module">
   export const prerender = true;
   import Header from "$lib/header/Header.svelte";
+  import MainMenu from "../components/index/MainMenu.svelte";
 </script>
 
 <svelte:head>
@@ -8,16 +9,7 @@
 </svelte:head>
 
 <section id="main" class="flex">
-  <div>
-    <h2>Hello world</h2>
-  </div>
-  <div>
-    <h2>Hello world</h2>
-  </div>
-  <div>
-    <h2>Hello world</h2>
-  </div>
-  <div>
-    <h2>Hello world</h2>
+  <div class="h-full">
+    <MainMenu />
   </div>
 </section>
