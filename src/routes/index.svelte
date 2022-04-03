@@ -2,10 +2,11 @@
   export const prerender = true;
   import Header from "$lib/header/Header.svelte";
   import MainMenu from "../components/index/MainMenu.svelte";
+  import Title from "$lib/Title.svelte";
 </script>
 
 <svelte:head>
-  <title>dewantaratirta.github.io</title>
+  <title>dewantara tirta 🐎</title>
 </svelte:head>
 
 <section id="main" class="flex">
@@ -13,3 +14,5 @@
     <MainMenu />
   </div>
 </section>
+
+<Title />
