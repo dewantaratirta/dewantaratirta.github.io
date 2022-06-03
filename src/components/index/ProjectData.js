@@ -29,6 +29,18 @@ export const getData = () => {
     return ProjectData;
 }
 
+export const getDataBySlug = (Slug) => {
+    let data = getData();
+    let returns = [];
+
+    data.forEach( project => {
+        if( project.slug == Slug ){
+            returns = project;
+        }
+    });
+    return returns;
+}
+
 let ProjectData = [
     {
         static_folder: 'kumon',
