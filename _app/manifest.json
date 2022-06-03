@@ -1,53 +1,69 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-d7771685.js",
+    "file": "start-67aca8c3.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-6de417aa.js"
+      "_vendor-b9d9977a.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/runtime/components/error.svelte",
-      "src/routes/index.svelte"
+      "src/routes/index.svelte",
+      "src/routes/tools/read_camera.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-a7a60872.js",
+    "file": "pages/__layout.svelte-3ea794b0.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-6de417aa.js"
+      "_vendor-b9d9977a.js",
+      "_CheckMobile-39ccc821.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-822dac34.css",
-      "assets/Header.svelte_svelte_type_style_lang-53024745.css"
+      "assets/pages/__layout.svelte-6a331ba3.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-024980ea.js",
+    "file": "error.svelte-a471331a.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-6de417aa.js"
+      "_vendor-b9d9977a.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-685a131e.js",
+    "file": "pages/index.svelte-98ff9e88.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-6de417aa.js"
+      "_vendor-b9d9977a.js",
+      "_CheckMobile-39ccc821.js"
     ],
     "css": [
-      "assets/pages/index.svelte-df36eed9.css",
-      "assets/Header.svelte_svelte_type_style_lang-53024745.css"
+      "assets/pages/index.svelte-e7c823d3.css"
     ]
   },
-  "_vendor-6de417aa.js": {
-    "file": "chunks/vendor-6de417aa.js"
+  "src/routes/tools/read_camera.svelte": {
+    "file": "pages/tools/read_camera.svelte-506c1d04.js",
+    "src": "src/routes/tools/read_camera.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-b9d9977a.js"
+    ]
+  },
+  "_vendor-b9d9977a.js": {
+    "file": "chunks/vendor-b9d9977a.js"
+  },
+  "_CheckMobile-39ccc821.js": {
+    "file": "chunks/CheckMobile-39ccc821.js",
+    "css": [
+      "assets/CheckMobile-f55f460c.css"
+    ]
   }
 }
