@@ -70,8 +70,3 @@ img::after{
 	color:inherit;
 	border-color: inherit;
 }
-
-#maincontainer #main{
-	height:100%;
-	width:100%;
-}

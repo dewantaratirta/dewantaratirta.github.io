@@ -2,10 +2,14 @@
   import Header from "$lib/header/Header.svelte";
   import "../app.css";
   import Cursor from "$lib/cursor/Cursor.svelte";
+
+  // cursor element
+  let cursorComponent;
+  
 </script>
 
-<Cursor />
-<div id="maincontainer" class="flex flex-col">
+<Cursor bind:this={cursorComponent}/>
+<div id="maincontainer" class="flex flex-col" on:mousemove={cursorComponent.mouseMove}>
   <Header />
   <slot />
 </div>
