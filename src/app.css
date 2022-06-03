@@ -8,6 +8,7 @@
 }
 body{
 	padding:10px;
+	overflow-x:hidden;
 }
 body#light{
 	--background:#fef6eb;
@@ -36,6 +37,7 @@ body *{
 img{
 	position: relative;
 }
+
 img::after{
 	content:" ";
 	width:100%;

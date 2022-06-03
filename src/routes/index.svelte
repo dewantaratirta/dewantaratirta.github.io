@@ -1,8 +1,8 @@
 <script context="module">
   export const prerender = true;
-  import Header from "$lib/header/Header.svelte";
   import MainMenu from "../components/index/MainMenu.svelte";
   import Title from "$lib/Title.svelte";
+  import Projects from "../components/index/Projects.svelte";
 </script>
 
 <svelte:head>
@@ -13,6 +13,7 @@
   <div class="">
     <MainMenu />
   </div>
+  <Projects />
 </section>
 
 <Title />
