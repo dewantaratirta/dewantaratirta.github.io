@@ -18,8 +18,8 @@
   
   
   <div id="tab-2" class="pt-4 md:pt-0">
-    <p class="font-mono text-xs">Hello, my name is dewantara. I'm fullstack developer. Reach me at</p>
-    <p class="font-mono text-xs underline font-bold link"><a href="mailto:dewantara.tirta@gmail.com">dewantara.tirta@gmail.com</a></p>
+    <p class="font-mono text-xs">👋  I'm a software engineer based on Yogyakarta, Indonesia. Specializing in building website.</p>
+    <p class="font-mono text-xs">You can reach me on <a class="font-mono text-xs underline font-bold link" href="mailto:dewantara.tirta@gmail.com">dewantara.tirta@gmail.com</a></p>
   </div>
 </div>
 

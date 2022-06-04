@@ -1,7 +1,7 @@
 <script>
   import Header from "$lib/header/Header.svelte";
   import "../app.css";
-  import Cursor from "$lib/cursor/Cursor.svelte";
+  import Cursor from "$components/cursor/Cursor.svelte";
 
   // cursor element
   let cursorComponent;

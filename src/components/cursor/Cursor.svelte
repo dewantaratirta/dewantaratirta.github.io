@@ -2,13 +2,14 @@
   import { gsap } from "gsap";
   import { onMount, onDestroy } from "svelte";
   import checkMobile from "$lib/utils/CheckMobile";
-  // import { page } from "$app/navigation";
 
   // handle mouse effect on/off
   export let effect = false;
 
   // cursor element
   let cursor, cursor_s;
+
+  let init = false;
 
   let posX = 0,
     posY = 0,
@@ -19,6 +20,7 @@
     mouseMinus = 25;
 
   let targetLink = [];
+
 
   export const resize = () => {
     if (checkMobile.isTablet()) {
@@ -32,7 +34,12 @@
     effect = true;
   };
 
+
   export const mouseMove = (e) => {
+    if(!init) {
+      resize();
+      init = true;
+    }
     mouseX = e.clientX - mouseMinus;
     mouseY = e.clientY - mouseMinus;
     mouse_sX = e.clientX - 5;
@@ -66,9 +73,6 @@
   };
 
   onMount(() => {
-    // init mouse style
-    resize();
-
     // scan .link
     let targetLink = window.document.querySelectorAll(".link");
     Array.from(targetLink).forEach((v) => {
@@ -83,7 +87,7 @@
       v.removeEventListener("mouseenter", mouseEnter);
       v.removeEventListener("mouseleave", mouseLeave);
     });
-  });
+  });``
 
 </script>
 

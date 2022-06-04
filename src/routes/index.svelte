@@ -1,8 +1,8 @@
 <script context="module">
   export const prerender = true;
-  import MainMenu from "../components/index/MainMenu.svelte";
+  import MainMenu from "$components/index/MainMenu.svelte";
   import Title from "$lib/Title.svelte";
-  import Projects from "../components/index/Projects.svelte";
+  import Projects from "$components/index/Projects.svelte";
 </script>
 
 <svelte:head>

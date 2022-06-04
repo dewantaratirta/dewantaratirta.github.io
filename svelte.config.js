@@ -1,5 +1,8 @@
-// import adapter from '@sveltejs/adapter-auto';
-import adapter from '@sveltejs/adapter-static'
+import adapter from '@sveltejs/adapter-static';
+import {
+	mdsvex
+} from 'mdsvex'
+
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -11,11 +14,21 @@ const config = {
 			fallback: null
 		}),
 
-		// Override http methods in the Todo forms
-		methodOverride: {
-			allowed: ['PATCH', 'DELETE']
-		}
+		alias: {
+			$components: 'src/components',
+			$utils: 'src/utils'
+		},
 	},
+
+	extensions: ['.svelte', '.svx', '.md'],
+	preprocess: [
+		mdsvex({
+			extensions: ['.svx', '.md'],
+			layout: {
+				project: 'src/routes/project/_post.svelte'
+			}
+		}),
+	],
 };
 
 export default config;

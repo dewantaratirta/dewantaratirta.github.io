@@ -1,3 +1,6 @@
+import { dev } from '$app/env';
+
+let baseUrl = (dev) ? 'http://localhost:3000/' : 'https://dewantaratirta.github.io/';
 
 /**
  * Generate Slug from text
@@ -15,18 +18,22 @@ const convertToSlug = (Text) => {
  * @returns array
  */
 export const getData = () => {
-    ProjectData.forEach((v, i) => {
+    let tempData = [];
+    console.log(tempData);
+    tempData = ProjectData;
+    tempData.forEach((v, i) => {
+        console.log(v,i)
         //generate slug
-        ProjectData[i].slug = convertToSlug(v.title);
+        tempData[i].slug = convertToSlug(v.title);
 
         //generate folder structure
-        ProjectData[i].header_image = '/projects/' + v.static_folder + '/' + v.header_image;
+        tempData[i].header_image = baseUrl + 'projects/' + v.static_folder + '/' + v.header_image;
 
         //generate links
-        ProjectData[i].link = '/project/'+ProjectData[i].slug;
+        tempData[i].link = 'project/'+ProjectData[i].slug;
     });
-
-    return ProjectData;
+    console.log(tempData);
+    return tempData;
 }
 
 export const getDataBySlug = (Slug) => {
@@ -41,7 +48,7 @@ export const getDataBySlug = (Slug) => {
     return returns;
 }
 
-let ProjectData = [
+const ProjectData = [
     {
         static_folder: 'kumon',
         title: 'Kumon ASF - ON STAGE EVENT',
