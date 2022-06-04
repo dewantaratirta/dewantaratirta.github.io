@@ -15,7 +15,7 @@ export let header_image;
       <p>{date}</p>
       <img src="/{header_image}" alt="">
 
-      <div class="markdown">
+      <div class="prose prose-sm">
           <slot/>
       </div>
 

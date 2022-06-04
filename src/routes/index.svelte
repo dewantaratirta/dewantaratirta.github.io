@@ -2,7 +2,7 @@
   export const prerender = true;
   import MainMenu from "$components/index/MainMenu.svelte";
   import Title from "$lib/Title.svelte";
-  import Projects from "$components/index/Projects.svelte";
+  import Thumbnail from "$components/Project/Thumbnail.svelte"
 </script>
 
 <svelte:head>
@@ -13,7 +13,7 @@
   <div class="">
     <MainMenu />
   </div>
-  <Projects />
+  <Thumbnail/>
 </section>
 
 <Title />

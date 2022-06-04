@@ -1,5 +1,0 @@
-<style>
-    h1{
-        color:blue;
-    }
-</style>

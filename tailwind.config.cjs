@@ -5,8 +5,10 @@ module.exports = {
       fontFamily: {
         'mono': ['IBM Plex Mono', 'monospace'],
         'chivo': ['Chivo', 'sans serif'],
-      }
+      },
     }
   },
-  plugins: []
+  plugins: [
+    require('@tailwindcss/typography'),
+  ]
 };

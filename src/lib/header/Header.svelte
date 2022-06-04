@@ -39,9 +39,6 @@
     justify-content: space-between;
     padding: 10px;
   }
-  #logo {
-    line-height: 0px;
-  }
   #right {
     cursor: pointer;
   }

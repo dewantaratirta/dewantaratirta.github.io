@@ -1,5 +1,5 @@
 ---
-title: Post One
+title: Kumon Asf on stage event
 date: "2021-12-14"
 description: "Lalalala yeyeyeye"
 header_image: "projects/kumon/header.png"

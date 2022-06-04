@@ -2,12 +2,12 @@
 </script>
 
 <div id="menu-container" class="h-full d-flex flex flex-col md:justify-between">
-  <div id="tab_1" class="pr-4">
-    <h2 id="dir">Directory</h2>
+  <div id="tab_1" class="pr-0 md:pr-4">
+    <h2 id="dir" class="font-chivo text-2xl mb-0.5 mt-2">Directory</h2>
     <nav id="menu_left" class="flex flex-col">
-      <ol>
+      <ol class="pr0 md:pr-6 pl-8 py-2">
         <li>
-          <a sveltekit:prefetch class="link" href="/">Project</a>
+          <a  class="link" href="/">Projects</a>
         </li>
         <li>
           <a sveltekit:prefetch class="link" href="/">Playground</a>
@@ -17,18 +17,14 @@
   </div>
   
   
-  <div id="tab-2" class="pt-4 md:pt-0">
+  <div id="tab-2" class="pt-4 md:pt-0 pr-0 md:pr-4">
     <p class="font-mono text-xs">👋  I'm a software engineer based on Yogyakarta, Indonesia. Specializing in building website.</p>
-    <p class="font-mono text-xs">You can reach me on <a class="font-mono text-xs underline font-bold link" href="mailto:dewantara.tirta@gmail.com">dewantara.tirta@gmail.com</a></p>
+    <p class="font-mono text-xs">You can reach me on <a class="font-mono text-xs underline font-bold link mail" href="mailto:dewantara.tirta@gmail.com">dewantara.tirta@gmail.com</a></p>
   </div>
 </div>
 
 <style type="postcss">
-  #dir {
-    @apply font-chivo text-2xl mb-0.5 mt-2;
-  }
   #menu_left ol {
-    @apply pr-6 pl-8 py-2;
     list-style-type: decimal-leading-zero;
     background-color: var(--text-primary);
   }
@@ -42,6 +38,10 @@
   }
   #menu_left ol li a.active {
     @apply italic;
+  }
+
+  .mail{
+    word-break: break-all;
   }
 
   /* MOBILE */

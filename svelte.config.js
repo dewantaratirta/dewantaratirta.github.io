@@ -18,6 +18,9 @@ const config = {
 			$components: 'src/components',
 			$utils: 'src/utils'
 		},
+		methodOverride: {
+			allowed: ['POST']
+		}
 	},
 
 	extensions: ['.svelte', '.svx', '.md'],

@@ -1,6 +1,7 @@
-body .markdown{
-    background:red !important;
+.prose h1{
+    @apply font-mono;
+    color: var(--text-primary) !important;
 }
-.markdown h1{
-    color:blue;
+.prose p{
+    color: var(--text-primary) !important;
 }
