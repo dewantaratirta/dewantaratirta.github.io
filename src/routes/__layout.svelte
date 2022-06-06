@@ -17,21 +17,19 @@
       return;
     }
 
-    if(menuShow != true) {
+    if (menuShow != true) {
       menuShow = true;
     }
   };
 
   let click = () => {
-    if(!CheckMobile.isMobile() || !CheckMobile.isTablet()) return;
+    if (!CheckMobile.isMobile() || !CheckMobile.isTablet()) return;
     menuShow = !menuShow;
   };
 
-  onMount( () =>{
+  onMount(() => {
     resize();
-  })
-
-
+  });
 
   $: menuShow;
 </script>
@@ -48,19 +46,29 @@
     <div class="">
       <MainMenu show={menuShow} />
     </div>
-    <div class="px-0 md:px-4">
+    <div class="content px-0 md:px-4 mt-2">
       <slot />
     </div>
   </section>
 </div>
 
-<svelte:window on:resize={resize}/>
+<svelte:window on:resize={resize} />
 
 <style>
   #maincontainer {
     height: 100vh;
-    padding: 10px;
   }
+
+  #main {
+    height: calc(100vh - 8vh - 10px);
+    margin-top: 8vh;
+    padding: 0px 10px 10px 10px;
+  }
+  
+  .content{
+    width:100%;
+  }
+
   @media (max-width: 1024px) {
     #main {
       flex-direction: column;
@@ -68,8 +76,8 @@
     }
   }
   @media (min-width: 1025px) {
-    #main {
-      height: 100%;
+    .content {
+      margin-left:calc(15vw + 10px);
     }
   }
 </style>

@@ -43,7 +43,11 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px 20px 10px 20px;
+    position:fixed;
+    background:#fef6eb;
+    height:8vh;
+    z-index:1060;
   }
   #right {
     cursor: pointer;

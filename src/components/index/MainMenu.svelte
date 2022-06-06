@@ -48,8 +48,6 @@
 {/if}
 
 <style type="postcss">
-  #menu-container {
-  }
   #menu_left ol {
     list-style-type: decimal-leading-zero;
     background-color: var(--text-primary);
@@ -84,6 +82,8 @@
       width: 15vw;
       padding-right: 4px;
       border-right: 1px solid var(--text-primary);
+      position: fixed;
+      height: calc(100vh - 8vh - 20px);
     }
   }
 </style>
