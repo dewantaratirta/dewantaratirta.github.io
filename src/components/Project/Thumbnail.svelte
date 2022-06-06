@@ -29,7 +29,7 @@
 </script>
 
 
-<div class="px-0 md:px-4">
+<div class="">
   <h1 class="font-chivo text-2xl mb-0.5 mt-2">Projects</h1>
   {#each posts as post}
   <a sveltekit:prefetch href="project/{post.slug}">
