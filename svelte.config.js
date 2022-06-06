@@ -1,4 +1,5 @@
 import adapter from '@sveltejs/adapter-static';
+const dev = process.env.NODE_ENV === 'development';
 import {
 	mdsvex
 } from 'mdsvex'
@@ -13,9 +14,9 @@ const config = {
 			assets: 'dist',
 			fallback: null
 		}),
-		paths: {
-			base: dev ? '' : '/dewantaratirta',
-		},
+		// paths: {
+		// 	base: dev ? '' : '/dewantaratirta',
+		// },
 		alias: {
 			$components: 'src/components',
 			$utils: 'src/utils'
@@ -24,6 +25,10 @@ const config = {
 			allowed: ['POST']
 		},
 		trailingSlash: 'always',
+		prerender: {
+			// This can be false if you're using a fallback (i.e. SPA mode)
+			default: true
+		}
 	},
 
 	extensions: ['.svelte', '.svx', '.md'],
