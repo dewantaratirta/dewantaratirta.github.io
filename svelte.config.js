@@ -13,7 +13,9 @@ const config = {
 			assets: 'dist',
 			fallback: null
 		}),
-
+		paths: {
+			base: dev ? '' : '/dewantaratirta',
+		},
 		alias: {
 			$components: 'src/components',
 			$utils: 'src/utils'
