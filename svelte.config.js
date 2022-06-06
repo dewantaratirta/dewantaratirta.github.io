@@ -20,7 +20,8 @@ const config = {
 		},
 		methodOverride: {
 			allowed: ['POST']
-		}
+		},
+		trailingSlash: 'always',
 	},
 
 	extensions: ['.svelte', '.svx', '.md'],
