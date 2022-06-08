@@ -21,22 +21,25 @@
 
   let targetLink = [];
 
+  let isUserTablet = false;
+  let lastMoveContainLinks = false;
 
   export const resize = () => {
     if (checkMobile.isTablet()) {
+      isUserTablet = true;
       cursor.style.opacity = "0";
       cursor_s.style.opacity = "0";
       effect = false;
       return;
     }
+    isUserTablet = false;
     cursor.style.opacity = "1";
     cursor_s.style.opacity = "1";
     effect = true;
   };
 
-
   export const mouseMove = (e) => {
-    if(!init) {
+    if (!init) {
       resize();
       init = true;
     }
@@ -48,9 +51,10 @@
     gsap.to("#cursor_s", { left: mouse_sX, top: mouse_sY, duration: 0.4 });
   };
 
-  const mouseEnter = (e) => {
+  const mouseEnter = () => {
+    if (isUserTablet) return;
     mouseMinus = 40;
-    let cursorOpacity = (cursor.style.opacity == "0") ? 0 : 0.5;
+    let cursorOpacity = cursor.style.opacity == "0" ? 0 : 0.5;
     gsap.to("#cursor", {
       width: "80px",
       height: "80px",
@@ -60,43 +64,40 @@
     });
   };
 
-  const mouseLeave = (e) => {
-    mouseMinus = 25;
-    let cursorOpacity = (cursor.style.opacity == "0") ? 0 : 1;
-    gsap.to("#cursor", {
-      width: "50px",
-      height: "50px",
-      opacity: cursorOpacity,
-      duration: 0.4,
-      background: "none",
-    });
+  const mouseLeave = () => {
+    setTimeout(() => {
+      mouseMinus = 25;
+      let cursorOpacity = cursor.style.opacity == "0" ? 0 : 1;
+      gsap.to("#cursor", {
+        width: "50px",
+        height: "50px",
+        opacity: cursorOpacity,
+        duration: 0.4,
+        background: "none",
+      });
+    }, 333);
   };
 
-  onMount(() => {
-    // scan .link
-    setTimeout(() => {
-      let targetLink = window.document.querySelectorAll(".link");
-      Array.from(targetLink).forEach((v) => {
-        v.addEventListener("mouseenter", mouseEnter);
-        v.addEventListener("mouseleave", mouseLeave);
-      });
-    }, 250)
-  });
-
-  onDestroy(() => {
-    if(targetLink.length == 0) return;
-    Array.from(targetLink).forEach((v) => {
-      v.removeEventListener("mouseenter", mouseEnter);
-      v.removeEventListener("mouseleave", mouseLeave);
-    });
-  });
-
+  const mouseOver = (e) => {
+    let containLinks =
+      e.target.classList.contains("link") ||
+      e.target.parentElement.classList.contains("link");
+    if (containLinks) {
+      console.log("do 1");
+      console.log();
+      mouseEnter(e.target.classList);
+      mouseEnter(e.target.parentElement.classList);
+    } else {
+      console.log("do 2");
+      mouseLeave();
+    }
+  };
 </script>
 
 <div id="cursor" bind:this={cursor} on:mousemove={mouseMove} />
 <div id="cursor_s" bind:this={cursor_s} />
 
-<svelte:window on:resize={resize} />
+<svelte:window on:resize={resize} on:mouseover={mouseOver} />
 
 <!-- </div> -->
 <style>

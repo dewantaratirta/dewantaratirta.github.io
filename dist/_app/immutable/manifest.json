@@ -1,10 +1,10 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-acdda8a7.js",
+    "file": "start-a87903c0.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-a5104f20.js",
+      "_index-e93e7d4b.js",
       "_singletons-d6e4a54a.js"
     ],
     "dynamicImports": [
@@ -18,36 +18,36 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-d98709de.js",
+    "file": "pages/__layout.svelte-af4847e8.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-a5104f20.js",
-      "_CheckMobile-9f58599f.js"
+      "_index-e93e7d4b.js",
+      "_CheckMobile-7cf7a0ec.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-d8cddbed.css"
+      "assets/pages/__layout.svelte-9b697127.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-c192377e.js",
+    "file": "error.svelte-122e1d01.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-a5104f20.js"
+      "_index-e93e7d4b.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-03aab720.js",
+    "file": "pages/index.svelte-23c50163.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-a5104f20.js",
+      "_index-e93e7d4b.js",
       "_singletons-d6e4a54a.js",
-      "_CheckMobile-9f58599f.js"
+      "_CheckMobile-7cf7a0ec.js"
     ],
     "dynamicImports": [
       "src/routes/project/kumon-asf-on-stage-event.md",
@@ -55,64 +55,61 @@
       "src/routes/project/testing.md"
     ],
     "css": [
-      "assets/pages/index.svelte-3795c54f.css"
+      "assets/pages/index.svelte-67d5caf5.css"
     ]
   },
   "src/routes/project/kumon-asf-on-stage-event.md": {
-    "file": "pages/project/kumon-asf-on-stage-event.md-edc9cc3b.js",
+    "file": "pages/project/kumon-asf-on-stage-event.md-aed6e84d.js",
     "src": "src/routes/project/kumon-asf-on-stage-event.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-a5104f20.js",
-      "__post-0b4c936e.js"
+      "_index-e93e7d4b.js",
+      "__post-79aacdb9.js"
     ]
   },
   "src/routes/project/testing-copy.md": {
-    "file": "pages/project/testing-copy.md-49eba24b.js",
+    "file": "pages/project/testing-copy.md-966c0f8c.js",
     "src": "src/routes/project/testing-copy.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-a5104f20.js",
-      "__post-0b4c936e.js"
+      "_index-e93e7d4b.js",
+      "__post-79aacdb9.js"
     ]
   },
   "src/routes/project/testing.md": {
-    "file": "pages/project/testing.md-0244fb26.js",
+    "file": "pages/project/testing.md-f7a4df6b.js",
     "src": "src/routes/project/testing.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-a5104f20.js",
-      "__post-0b4c936e.js"
+      "_index-e93e7d4b.js",
+      "__post-79aacdb9.js"
     ]
   },
   "src/routes/tools/read_camera.svelte": {
-    "file": "pages/tools/read_camera.svelte-215649b7.js",
+    "file": "pages/tools/read_camera.svelte-68c6eaf5.js",
     "src": "src/routes/tools/read_camera.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-a5104f20.js"
+      "_index-e93e7d4b.js"
     ]
   },
-  "_index-a5104f20.js": {
-    "file": "chunks/index-a5104f20.js"
+  "_index-e93e7d4b.js": {
+    "file": "chunks/index-e93e7d4b.js"
   },
   "_singletons-d6e4a54a.js": {
     "file": "chunks/singletons-d6e4a54a.js"
   },
-  "_CheckMobile-9f58599f.js": {
-    "file": "chunks/CheckMobile-9f58599f.js",
-    "css": [
-      "assets/CheckMobile-c5dafb75.css"
-    ]
+  "_CheckMobile-7cf7a0ec.js": {
+    "file": "chunks/CheckMobile-7cf7a0ec.js"
   },
-  "__post-0b4c936e.js": {
-    "file": "chunks/_post-0b4c936e.js",
+  "__post-79aacdb9.js": {
+    "file": "chunks/_post-79aacdb9.js",
     "imports": [
-      "_index-a5104f20.js"
+      "_index-e93e7d4b.js"
     ]
   }
 }

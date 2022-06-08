@@ -10,21 +10,23 @@
   <div
     id="menu-container"
     class="h-full d-flex flex flex-col md:justify-between"
-
-    in:fly|local="{{ y: -50, duration: 2000 }}"
-    out:fly|local="{{ y: -50, duration: 400 }}"
+    in:fly|local={{ y: -50, duration: 2000 }}
+    out:fly|local={{ y: -50, duration: 400 }}
   >
     <div id="tab_1" class="pr-0 md:pr-4">
       <h2 id="dir" class="font-chivo text-2xl mb-0.5 mt-2">Directory</h2>
       <nav id="menu_left" class="flex flex-col">
         <ol class="pr0 md:pr-6 pl-8 py-2">
           <li>
-            <a class="link {active == 1 ? 'active' : ''}" href="/">Projects</a>
+            <a class="link {active == 1 ? 'active' : ''}" href="/">Home</a>
+          </li>
+          <li>
+            <a class="link {active == 2 ? 'active' : ''}" href="#">Projects</a>
           </li>
           <li>
             <a
               sveltekit:prefetch
-              class="link {active == 2 ? 'active' : ''}"
+              class="link {active == 3 ? 'active' : ''}"
               href="/">Playground</a
             >
           </li>
@@ -61,7 +63,8 @@
     border-bottom: 1px solid var(--background);
   }
   #menu_left ol li a.active {
-    @apply italic;
+    @apply italic font-mono;
+    text-decoration: underline;
   }
 
   .mail {
@@ -73,6 +76,14 @@
     #menu-container {
       padding-bottom: 4px;
       border-bottom: 1px solid var(--text-primary);
+      position: fixed;
+      width: 100%;
+      background: var(--background);
+      z-index: 1060;
+      display: block;
+      height: auto !important;
+      width: auto !important;
+      padding-right:10px;
     }
   }
 

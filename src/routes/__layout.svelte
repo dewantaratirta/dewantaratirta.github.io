@@ -73,6 +73,7 @@
     #main {
       flex-direction: column;
       width: 100%;
+      overflow-x:hidden;
     }
   }
   @media (min-width: 1025px) {
