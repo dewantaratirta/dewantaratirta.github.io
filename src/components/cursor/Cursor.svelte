@@ -74,11 +74,13 @@
 
   onMount(() => {
     // scan .link
-    let targetLink = window.document.querySelectorAll(".link");
-    Array.from(targetLink).forEach((v) => {
-      v.addEventListener("mouseenter", mouseEnter);
-      v.addEventListener("mouseleave", mouseLeave);
-    });
+    setTimeout(() => {
+      let targetLink = window.document.querySelectorAll(".link");
+      Array.from(targetLink).forEach((v) => {
+        v.addEventListener("mouseenter", mouseEnter);
+        v.addEventListener("mouseleave", mouseLeave);
+      });
+    }, 250)
   });
 
   onDestroy(() => {
@@ -87,7 +89,7 @@
       v.removeEventListener("mouseenter", mouseEnter);
       v.removeEventListener("mouseleave", mouseLeave);
     });
-  });``
+  });
 
 </script>
 

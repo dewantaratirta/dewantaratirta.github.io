@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-b1163b65.js",
+    "file": "start-acdda8a7.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -12,21 +12,22 @@
       ".svelte-kit/runtime/components/error.svelte",
       "src/routes/index.svelte",
       "src/routes/project/kumon-asf-on-stage-event.md",
-      "src/routes/testing/slug.svelte",
+      "src/routes/project/testing-copy.md",
+      "src/routes/project/testing.md",
       "src/routes/tools/read_camera.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-214e46a8.js",
+    "file": "pages/__layout.svelte-d98709de.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-a5104f20.js",
-      "_CheckMobile-7cf7a0ec.js"
+      "_CheckMobile-9f58599f.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-9fd02b08.css"
+      "assets/pages/__layout.svelte-d8cddbed.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -39,38 +40,52 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-526f8807.js",
+    "file": "pages/index.svelte-03aab720.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-a5104f20.js",
       "_singletons-d6e4a54a.js",
-      "_CheckMobile-7cf7a0ec.js"
+      "_CheckMobile-9f58599f.js"
     ],
     "dynamicImports": [
-      "src/routes/project/kumon-asf-on-stage-event.md"
+      "src/routes/project/kumon-asf-on-stage-event.md",
+      "src/routes/project/testing-copy.md",
+      "src/routes/project/testing.md"
     ],
     "css": [
-      "assets/pages/index.svelte-456bf11c.css"
+      "assets/pages/index.svelte-3795c54f.css"
     ]
   },
   "src/routes/project/kumon-asf-on-stage-event.md": {
-    "file": "pages/project/kumon-asf-on-stage-event.md-f02165d4.js",
+    "file": "pages/project/kumon-asf-on-stage-event.md-edc9cc3b.js",
     "src": "src/routes/project/kumon-asf-on-stage-event.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-a5104f20.js"
+      "_index-a5104f20.js",
+      "__post-0b4c936e.js"
     ]
   },
-  "src/routes/testing/slug.svelte": {
-    "file": "pages/testing/slug.svelte-f01eae54.js",
-    "src": "src/routes/testing/slug.svelte",
+  "src/routes/project/testing-copy.md": {
+    "file": "pages/project/testing-copy.md-49eba24b.js",
+    "src": "src/routes/project/testing-copy.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-a5104f20.js"
+      "_index-a5104f20.js",
+      "__post-0b4c936e.js"
+    ]
+  },
+  "src/routes/project/testing.md": {
+    "file": "pages/project/testing.md-0244fb26.js",
+    "src": "src/routes/project/testing.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-a5104f20.js",
+      "__post-0b4c936e.js"
     ]
   },
   "src/routes/tools/read_camera.svelte": {
@@ -88,7 +103,16 @@
   "_singletons-d6e4a54a.js": {
     "file": "chunks/singletons-d6e4a54a.js"
   },
-  "_CheckMobile-7cf7a0ec.js": {
-    "file": "chunks/CheckMobile-7cf7a0ec.js"
+  "_CheckMobile-9f58599f.js": {
+    "file": "chunks/CheckMobile-9f58599f.js",
+    "css": [
+      "assets/CheckMobile-c5dafb75.css"
+    ]
+  },
+  "__post-0b4c936e.js": {
+    "file": "chunks/_post-0b4c936e.js",
+    "imports": [
+      "_index-a5104f20.js"
+    ]
   }
 }

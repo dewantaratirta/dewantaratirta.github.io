@@ -12,7 +12,7 @@
 
 <div id="header">
   
-  <div id="logo-container">
+  <div id="logo-container" class="flex justify-center items-center">
     <svg width="1" height="1" xmlns="http://www.w3.org/2000/svg" id="f">
       <filter id="blurMe">
         <feTurbulence type="fractalNoise" baseFrequency="0.000001" numOctaves="1" result="warp" />
@@ -24,8 +24,8 @@
     <a href="/">
       <h3 class="font-black font-mono">Dewantara<br>Tirta</h3>
     </a>
-
   </div>
+
   <div class="flex justify-center items-center">
     <div id="right" class="link" on:click={menuClickHandler}>
       <svg width="60" viewBox="0 0 700 700" fill="var(--text-primary)" xmlns="http://www.w3.org/2000/svg">
@@ -36,6 +36,8 @@
       </svg>
     </div>
   </div>
+
+
 </div>
 
 <style>
@@ -49,15 +51,15 @@
     height:8vh;
     z-index:1060;
   }
+
+  #header h3{
+    line-height: 1;
+  }
   #right {
     cursor: pointer;
   }
   #logo-container {
     position: relative;
   }
-  #f {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-  }
+
 </style>
