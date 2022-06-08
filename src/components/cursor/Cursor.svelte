@@ -43,6 +43,8 @@
       resize();
       init = true;
     }
+    if(isUserTablet) return;
+    
     mouseX = e.clientX - mouseMinus;
     mouseY = e.clientY - mouseMinus;
     mouse_sX = e.clientX - 5;

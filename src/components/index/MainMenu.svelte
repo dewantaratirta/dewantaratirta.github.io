@@ -60,7 +60,7 @@
     color: var(--background);
   }
   #menu_left ol li a:hover {
-    border-bottom: 1px solid var(--background);
+    /* border-bottom: 1px solid var(--background); */
   }
   #menu_left ol li a.active {
     @apply italic font-mono;
