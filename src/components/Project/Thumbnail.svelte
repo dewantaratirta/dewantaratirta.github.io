@@ -50,12 +50,12 @@
     {#each posts as post, i}
       <a
         sveltekit:prefetch
-        href="project/{post.slug}"
+        href="/project/{post.slug}"
         style="grid-column-start:{gridColumn(i)}; grid-row-start:{gridRow(i)}"
         class="link"
       >
         {#if post.meta.hasOwnProperty("header_image")}
-          <img src={post.meta.header_image} alt="" />
+          <img src="/{post.meta.header_image}" alt="" />
         {/if}
         <h1 class="thumbnail-title text-xs md:text-lg">{post.meta.title}</h1>
       </a>

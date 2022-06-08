@@ -10,17 +10,9 @@
   }
 </script>
 
-<div id="header">
+<div id="header" >
   
   <div id="logo-container" class="flex justify-center items-center">
-    <svg width="1" height="1" xmlns="http://www.w3.org/2000/svg" id="f">
-      <filter id="blurMe">
-        <feTurbulence type="fractalNoise" baseFrequency="0.000001" numOctaves="1" result="warp" />
-        <feOffset dx="0" dy="0" result="warpOffset" />
-        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset" />
-      </filter>
-    </svg>
-
     <a href="/">
       <h3 class="font-black font-mono">Dewantara<br>Tirta</h3>
     </a>
@@ -47,7 +39,7 @@
     justify-content: space-between;
     padding: 20px 20px 10px 20px;
     position:fixed;
-    background:#fef6eb;
+    /* background:var(--background); */
     height:8vh;
     z-index:1060;
   }

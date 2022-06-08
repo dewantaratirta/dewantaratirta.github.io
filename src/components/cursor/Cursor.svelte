@@ -55,6 +55,7 @@
     if (isUserTablet) return;
     mouseMinus = 40;
     let cursorOpacity = cursor.style.opacity == "0" ? 0 : 0.5;
+    cursor_s.style.opacity = cursorOpacity;
     gsap.to("#cursor", {
       width: "80px",
       height: "80px",
@@ -68,6 +69,7 @@
     setTimeout(() => {
       mouseMinus = 25;
       let cursorOpacity = cursor.style.opacity == "0" ? 0 : 1;
+      cursor_s.style.opacity = cursorOpacity;
       gsap.to("#cursor", {
         width: "50px",
         height: "50px",
@@ -83,12 +85,9 @@
       e.target.classList.contains("link") ||
       e.target.parentElement.classList.contains("link");
     if (containLinks) {
-      console.log("do 1");
-      console.log();
       mouseEnter(e.target.classList);
       mouseEnter(e.target.parentElement.classList);
     } else {
-      console.log("do 2");
       mouseLeave();
     }
   };

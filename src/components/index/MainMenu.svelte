@@ -21,7 +21,7 @@
             <a class="link {active == 1 ? 'active' : ''}" href="/">Home</a>
           </li>
           <li>
-            <a class="link {active == 2 ? 'active' : ''}" href="#">Projects</a>
+            <a class="link {active == 2 ? 'active' : ''}" href="/projects/">Projects</a>
           </li>
           <li>
             <a

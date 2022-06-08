@@ -8,4 +8,8 @@
   <title>dewantara tirta 🐎</title>
 </svelte:head>
 
+<div class="d-flex">
+    <Thumbnail />
+</div>
+
 <Title />
