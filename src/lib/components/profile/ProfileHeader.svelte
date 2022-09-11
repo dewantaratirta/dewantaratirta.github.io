@@ -1,6 +1,6 @@
 <script>
-	import GenerateTags from '$components/GenerateTags.svelte';
-	let tags = ['JavaScript', 'PHP', 'fullstack'];
+	import GenerateTags from "$components/GenerateTags.svelte";
+	let tags = ["JavaScript", "PHP", "fullstack"];
 </script>
 
 <header>
@@ -9,7 +9,9 @@
 			<h2>Dewantara Tirta Putra</h2>
 			<p>
 				Hello, im fullstack web developer based on Yogyakarta.<br />
-				<code class="text-alt">Currently Working as Backend Engineer @ ICUBE by Sirclo</code>
+				<code class="text-alt"
+					>Currently Working as Backend Engineer @ ICUBE by Sirclo</code
+				>
 			</p>
 			<div class="tags-container">
 				<GenerateTags {tags} />
@@ -58,6 +60,29 @@
 	@media (max-width: 1200px) {
 		.right img {
 			max-width: 80px;
+		}
+	}
+
+	@media (max-width: 600px) {
+		header {
+			margin: 0;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			flex-direction: column-reverse;
+		}
+		header .left h2,
+		header .left p {
+			text-align: center;
+		}
+		.tags-container {
+			width: 100%;
+			display: flex;
+			align-content: center;
+			align-items: center;
+			justify-content: center;
 		}
 	}
 </style>

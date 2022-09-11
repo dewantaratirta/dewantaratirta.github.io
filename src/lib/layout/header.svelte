@@ -20,7 +20,7 @@
 		</li>
 	</ul>
 	<ul>
-		<li><a href="https://picocss.com#examples" class="secondary">Examples</a></li>
+		<li><a href="#" class="secondary">Examples</a></li>
 		<li>
 			<a href="https://github.com/dewantaratirta" class="contrast" aria-label="Pico GitHub repository"
 				><svg

@@ -26,17 +26,17 @@ const GenerateTags = create_ssr_component(($$result, $$props, $$bindings, slots)
 });
 const ProfileHeader_svelte_svelte_type_style_lang = "";
 const css$4 = {
-  code: ".heading.svelte-or7pbz.svelte-or7pbz{margin-bottom:0px}header.svelte-or7pbz.svelte-or7pbz{margin:0px;width:100%;display:flex;justify-content:space-around;align-items:flex-start}header.svelte-or7pbz .left.svelte-or7pbz,header.svelte-or7pbz .right.svelte-or7pbz{padding:10px}header.svelte-or7pbz .left.svelte-or7pbz{display:flex;flex-direction:column;justify-content:center}header.svelte-or7pbz .left .text-alt.svelte-or7pbz{padding:0px;margin-top:10px}.right.svelte-or7pbz img.svelte-or7pbz{border-radius:20em;max-width:180px}.tags-container.svelte-or7pbz.svelte-or7pbz{display:flex}@media(max-width: 1200px){.right.svelte-or7pbz img.svelte-or7pbz{max-width:80px}}",
+  code: ".heading.svelte-1l2fr4r.svelte-1l2fr4r{margin-bottom:0px}header.svelte-1l2fr4r.svelte-1l2fr4r{margin:0px;width:100%;display:flex;justify-content:space-around;align-items:flex-start}header.svelte-1l2fr4r .left.svelte-1l2fr4r,header.svelte-1l2fr4r .right.svelte-1l2fr4r{padding:10px}header.svelte-1l2fr4r .left.svelte-1l2fr4r{display:flex;flex-direction:column;justify-content:center}header.svelte-1l2fr4r .left .text-alt.svelte-1l2fr4r{padding:0px;margin-top:10px}.right.svelte-1l2fr4r img.svelte-1l2fr4r{border-radius:20em;max-width:180px}.tags-container.svelte-1l2fr4r.svelte-1l2fr4r{display:flex}@media(max-width: 1200px){.right.svelte-1l2fr4r img.svelte-1l2fr4r{max-width:80px}}@media(max-width: 600px){header.svelte-1l2fr4r.svelte-1l2fr4r{margin:0;width:100%;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;flex-direction:column-reverse}header.svelte-1l2fr4r .left h2.svelte-1l2fr4r,header.svelte-1l2fr4r .left p.svelte-1l2fr4r{text-align:center}.tags-container.svelte-1l2fr4r.svelte-1l2fr4r{width:100%;display:flex;align-content:center;align-items:center;justify-content:center}}",
   map: null
 };
 const ProfileHeader = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let tags = ["JavaScript", "PHP", "fullstack"];
   $$result.css.add(css$4);
-  return `<header class="${"svelte-or7pbz"}"><div class="${"left svelte-or7pbz"}"><hgroup class="${"heading svelte-or7pbz"}"><h2>Dewantara Tirta Putra</h2>
-			<p>Hello, im fullstack web developer based on Yogyakarta.<br>
-				<code class="${"text-alt svelte-or7pbz"}">Currently Working as Backend Engineer @ ICUBE by Sirclo</code></p>
-			<div class="${"tags-container svelte-or7pbz"}">${validate_component(GenerateTags, "GenerateTags").$$render($$result, { tags }, {}, {})}</div></hgroup></div>
-	<div class="${"right svelte-or7pbz"}"><img src="${"img/pp.webp"}" alt="${""}" class="${"svelte-or7pbz"}"></div>
+  return `<header class="${"svelte-1l2fr4r"}"><div class="${"left svelte-1l2fr4r"}"><hgroup class="${"heading svelte-1l2fr4r"}"><h2 class="${"svelte-1l2fr4r"}">Dewantara Tirta Putra</h2>
+			<p class="${"svelte-1l2fr4r"}">Hello, im fullstack web developer based on Yogyakarta.<br>
+				<code class="${"text-alt svelte-1l2fr4r"}">Currently Working as Backend Engineer @ ICUBE by Sirclo</code></p>
+			<div class="${"tags-container svelte-1l2fr4r"}">${validate_component(GenerateTags, "GenerateTags").$$render($$result, { tags }, {}, {})}</div></hgroup></div>
+	<div class="${"right svelte-1l2fr4r"}"><img src="${"img/pp.webp"}" alt="${""}" class="${"svelte-1l2fr4r"}"></div>
 </header>`;
 });
 const allPostFiles = /* @__PURE__ */ Object.assign({ "../../../routes/portfolio/adira-finance.md": () => import("../../chunks/adira-finance.js"), "../../../routes/portfolio/infest-inkubasi.md": () => import("../../chunks/infest-inkubasi.js"), "../../../routes/portfolio/sapa-budaya.md": () => import("../../chunks/sapa-budaya.js") });
