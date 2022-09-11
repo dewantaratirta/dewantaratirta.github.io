@@ -55,7 +55,7 @@ export class Server {
 			app_template,
 			app_template_contains_nonce: false,
 			error_template,
-			trailing_slash: "always"
+			trailing_slash: "never"
 		};
 	}
 
