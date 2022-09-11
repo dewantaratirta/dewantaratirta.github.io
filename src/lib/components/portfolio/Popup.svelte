@@ -31,7 +31,7 @@
 		path = [];
 
 		// get markdown data
-		Project = await import(`../../../routes/portfolio/${slugName}.md`).then((res) => {
+		Project = await import(`../../portfolio/${slugName}.md`).then((res) => {
 			metadata = res.metadata;
 			console.log(metadata)
 			return res.default;
@@ -62,8 +62,8 @@
 	<dialog out:fade={{ duration: 300 }} open>
 		<article in:fly={{ y: -50, duration:500}}>
 			<header>
+				<p></p>
 				<span aria-label="Close" class="close" on:click={close} />
-				{metadata.title}
 			</header>
 			<svelte:component this={Project}/>
 		</article>

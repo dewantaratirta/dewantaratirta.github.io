@@ -1,5 +1,4 @@
 import { c as create_ssr_component, h as each, f as escape, v as validate_component, i as createEventDispatcher, m as missing_component, b as add_attribute } from "../../chunks/index.js";
-import { _ as __variableDynamicImportRuntimeHelper } from "../../chunks/dynamic-import-helper.js";
 const GenerateTags_svelte_svelte_type_style_lang = "";
 const css$5 = {
   code: ".tag.svelte-3n6kf2.svelte-3n6kf2{border:1px solid var(--secondary-focus);border-radius:20px;margin:5px;padding:2px 12px;font-size:12px;line-height:16px;height:28px;display:inline-flex;align-content:center;justify-content:center;flex-direction:row;align-items:center;background:var(--card-background-color)}.tag.has-icon.svelte-3n6kf2 span.svelte-3n6kf2{margin-left:5px}",
@@ -39,7 +38,7 @@ const ProfileHeader = create_ssr_component(($$result, $$props, $$bindings, slots
 	<div class="${"right svelte-1l2fr4r"}"><img src="${"img/pp.webp"}" alt="${""}" class="${"svelte-1l2fr4r"}"></div>
 </header>`;
 });
-const allPostFiles = /* @__PURE__ */ Object.assign({ "../../../routes/portfolio/adira-finance.md": () => import("../../chunks/adira-finance.js"), "../../../routes/portfolio/infest-inkubasi.md": () => import("../../chunks/infest-inkubasi.js"), "../../../routes/portfolio/sapa-budaya.md": () => import("../../chunks/sapa-budaya.js") });
+const allPostFiles = /* @__PURE__ */ Object.assign({ "/src/lib/portfolio/adira-finance.md": () => import("../../chunks/adira-finance.js"), "/src/lib/portfolio/infest-inkubasi.md": () => import("../../chunks/infest-inkubasi.js"), "/src/lib/portfolio/sapa-budaya.md": () => import("../../chunks/sapa-budaya.js") });
 const iterablePostFiles = Object.entries(allPostFiles);
 let defaultImage = "./img/placeholder.webp";
 const getAllMetadata = async () => {
@@ -58,6 +57,15 @@ const getAllMetadata = async () => {
     return new Date(b.meta.date) - new Date(a.meta.date);
   });
   return sortedPosts;
+};
+const __variableDynamicImportRuntimeHelper = (glob, path) => {
+  const v = glob[path];
+  if (v) {
+    return typeof v === "function" ? v() : Promise.resolve(v);
+  }
+  return new Promise((_, reject) => {
+    (typeof queueMicrotask === "function" ? queueMicrotask : setTimeout)(reject.bind(null, new Error("Unknown variable dynamic import: " + path)));
+  });
 };
 const Popup_svelte_svelte_type_style_lang = "";
 const css$3 = {
@@ -84,7 +92,7 @@ const Popup = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     console.log(slug);
     show = 1;
     dispatch("popupChange", { show, slug, fn: "open" });
-    Project = await __variableDynamicImportRuntimeHelper(/* @__PURE__ */ Object.assign({ "../../../routes/portfolio/adira-finance.md": () => import("../../chunks/adira-finance.js"), "../../../routes/portfolio/infest-inkubasi.md": () => import("../../chunks/infest-inkubasi.js"), "../../../routes/portfolio/sapa-budaya.md": () => import("../../chunks/sapa-budaya.js") }), `../../../routes/portfolio/${slugName}.md`).then((res) => {
+    Project = await __variableDynamicImportRuntimeHelper(/* @__PURE__ */ Object.assign({ "../../portfolio/adira-finance.md": () => import("../../chunks/adira-finance.js"), "../../portfolio/infest-inkubasi.md": () => import("../../chunks/infest-inkubasi.js"), "../../portfolio/sapa-budaya.md": () => import("../../chunks/sapa-budaya.js") }), `../../portfolio/${slugName}.md`).then((res) => {
       metadata = res.metadata;
       console.log(metadata);
       return res.default;
@@ -101,8 +109,8 @@ const Popup = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   if ($$props.open === void 0 && $$bindings.open && open !== void 0)
     $$bindings.open(open);
   $$result.css.add(css$3);
-  return `${show && Project != null ? `<dialog open class="${"svelte-oi14fp"}"><article class="${"svelte-oi14fp"}"><header><span aria-label="${"Close"}" class="${"close svelte-oi14fp"}"></span>
-				${escape(metadata.title)}</header>
+  return `${show && Project != null ? `<dialog open class="${"svelte-oi14fp"}"><article class="${"svelte-oi14fp"}"><header><p></p>
+				<span aria-label="${"Close"}" class="${"close svelte-oi14fp"}"></span></header>
 			${validate_component(Project || missing_component, "svelte:component").$$render($$result, {}, {}, {})}</article></dialog>` : ``}
 
 `;

@@ -8,6 +8,7 @@ const config = {
     alias: {
       $layout: path.resolve("./src/lib/layout"),
       $components: path.resolve("./src/lib/components"),
+      $portfolio: path.resolve("./src/lib/portfolio"),
     },
   },
 };

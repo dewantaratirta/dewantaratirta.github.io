@@ -1,6 +1,6 @@
 import { getAllContexts, onMount } from "svelte";
 
-const allPostFiles = import.meta.glob("../../../routes/portfolio/*.md");
+const allPostFiles = import.meta.glob("$portfolio/*.md");
 const iterablePostFiles = Object.entries(allPostFiles);
 
 export let defaultImage = './img/placeholder.webp';
@@ -34,32 +34,3 @@ export const getAllMetadata = async () => {
 
     return sortedPosts;
 };
-
-// export const getBySlug = async (slug) => {
-//     let singlePost = await Promise.all(
-//         iterablePostFiles.map(async ([path, resolver]) => {
-//             let { metadata, default: data } = await resolver();
-//             if (metadata.slug != slug) return;
-
-//             // set default image
-//             metadata.header_image = !metadata.header_image
-//                 ? defaultImage
-//                 : './portfolio/' + metadata.header_image;
-
-//             return {
-//                 meta: metadata,
-//                 data: data
-//             };
-//         })
-//     );
-
-//     let result;
-//     const data = Object.keys(await singlePost).forEach((key) => {
-//         if (!singlePost[key] == false) {
-//             result = singlePost[key];
-//             return singlePost[key];
-//         }
-//     });
-//     return result;
-
-// }
