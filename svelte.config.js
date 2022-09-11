@@ -15,7 +15,7 @@ const config = {
       fallback: '200.html',
       precompress: false,
     }),
-    trailingSlash: 'always',
+    // trailingSlash: 'always',
     // paths: {
     //   base: dev ? "" : "/dewantaratirta",
     // },
