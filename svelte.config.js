@@ -1,5 +1,5 @@
 import adapter from '@sveltejs/adapter-static';
-import autoprefixer from 'autoprefixer';
+// import autoprefixer from 'autoprefixer';
 import preprocess from 'svelte-preprocess';
 import { mdsvex } from 'mdsvex';
 

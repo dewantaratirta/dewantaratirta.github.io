@@ -1,5 +1,6 @@
 import { c as create_ssr_component, v as validate_component } from "./index.js";
 import { L as Layout } from "./layout.js";
+import { G as GenerateTags } from "./_page.js";
 const metadata = {
   "title": "Sapa Budaya",
   "date": "2021-12-15",
@@ -10,9 +11,11 @@ const metadata = {
   "layout": "basemd"
 };
 const Sapa_budaya = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let tags = ["JavaScript", "PHP", "react", "fullstack"];
   return `${validate_component(Layout, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata), {}, {
     default: () => {
       return `<p><img src="${"/portfolio/sapa-budaya.jpg"}" alt="${"alt text"}" title="${"Title"}"></p>
+<div>${validate_component(GenerateTags, "GenerateTags").$$render($$result, { tags }, {}, {})}</div>
 <h1>Hello world</h1>
 <p>Hello, I am <em>Post One.</em></p>
 <p><strong>Nice to meet you!</strong></p>`;

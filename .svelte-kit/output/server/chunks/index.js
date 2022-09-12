@@ -24,6 +24,9 @@ function get_store_value(store) {
   subscribe(store, (_) => value = _)();
   return value;
 }
+function null_to_empty(value) {
+  return value == null ? "" : value;
+}
 function custom_event(type, detail, { bubbles = false, cancelable = false } = {}) {
   const e = document.createEvent("CustomEvent");
   e.initCustomEvent(type, bubbles, cancelable, detail);
@@ -145,6 +148,7 @@ export {
   get_store_value as g,
   each as h,
   createEventDispatcher as i,
+  null_to_empty as j,
   missing_component as m,
   noop as n,
   setContext as s,
