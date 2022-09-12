@@ -7,8 +7,16 @@ header_image: "sapa-budaya.jpg"
 link: "http://sapabudaya.jogjakota.go.id/"
 layout: basemd
 ---
+<script>
+	import GenerateTags from "$components/GenerateTags.svelte";
+	let tags = ["JavaScript", "PHP", 'react', "fullstack"];
+</script>
 
 ![alt text](/portfolio/sapa-budaya.jpg "Title")
+
+<div>
+<GenerateTags {tags}/>
+</div>
 
 # Hello world
 

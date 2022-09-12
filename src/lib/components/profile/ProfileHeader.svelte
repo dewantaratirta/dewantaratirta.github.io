@@ -1,6 +1,7 @@
 <script>
 	import GenerateTags from "$components/GenerateTags.svelte";
-	let tags = ["JavaScript", "PHP", "fullstack"];
+	let tags = ["php", "js", "fullstack"];
+	let framework = ["ci", "vue", "reactjs", 'reactnative', 'svelte', 'jquery'];
 </script>
 
 <header>
@@ -8,14 +9,13 @@
 		<hgroup class="heading">
 			<h2>Dewantara Tirta Putra</h2>
 			<p>
-				Hello, im fullstack web developer based on Yogyakarta.<br />
+				Hello, im passionate web developer based on Yogyakarta.<br />
 				<code class="text-alt"
 					>Currently Working as Backend Engineer @ ICUBE by Sirclo</code
 				>
 			</p>
-			<div class="tags-container">
-				<GenerateTags {tags} />
-			</div>
+				<GenerateTags {tags} mobileCenter={true} />
+				<GenerateTags tags={framework} mobileCenter={true} />
 		</hgroup>
 	</div>
 	<div class="right">
@@ -53,10 +53,6 @@
 		max-width: 180px;
 	}
 
-	.tags-container {
-		display: flex;
-	}
-
 	@media (max-width: 1200px) {
 		.right img {
 			max-width: 80px;
@@ -76,13 +72,6 @@
 		header .left h2,
 		header .left p {
 			text-align: center;
-		}
-		.tags-container {
-			width: 100%;
-			display: flex;
-			align-content: center;
-			align-items: center;
-			justify-content: center;
 		}
 	}
 </style>

@@ -86,12 +86,12 @@
 	}
 
 	.project-thumbnail h6 {
-		font-size: 0.9em;
+		font-size: 0.95em;
 		margin-bottom: calc(var(--bs-gutter-x) * 0.5);
 	}
 
 	.project-thumbnail p {
-		font-size: 0.75em;
+		font-size: 0.9em;
 	}
 
 	@media (max-width: 767px) {
