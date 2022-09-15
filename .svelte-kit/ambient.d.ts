@@ -47,6 +47,7 @@ declare module '$env/static/private' {
 	export const LOCALAPPDATA: string;
 	export const LOGONSERVER: string;
 	export const NODE: string;
+	export const NODE_ENV: string;
 	export const npm: string;
 	export const npm_config_argv: string;
 	export const npm_config_bin_links: string;
@@ -179,6 +180,7 @@ declare module '$env/dynamic/private' {
 		LOCALAPPDATA: string;
 		LOGONSERVER: string;
 		NODE: string;
+		NODE_ENV: string;
 		npm: string;
 		npm_config_argv: string;
 		npm_config_bin_links: string;

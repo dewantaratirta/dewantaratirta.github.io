@@ -72,6 +72,7 @@ const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 		<li>${validate_component(Button, "DarkModeButton").$$render($$result, {}, {}, {})}</li></ul>
 </nav>`;
 });
+const app = "";
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<div>${validate_component(Header, "Header").$$render($$result, {}, {}, {})}
     ${slots.default ? slots.default({}) : ``}</div>`;
