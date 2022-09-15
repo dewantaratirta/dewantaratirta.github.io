@@ -13,9 +13,9 @@
 		"paths": {
 			"$lib":["./src/lib"],
 			"$lib/*":["./src/lib/*"],
-			"$layout/*": ["./src/lib/layout/*", "./src/lib/layout" ],
-			"$components/*": ["./src/lib/components/*", "./src/lib/components" ],
-			"$portfolio/*": ["./src/lib/portfolio/*", "./src/lib/portfolio" ],
+			"$layout/*": ["./src/lib/layout/*" ],
+			"$components/*": ["./src/lib/components/*" ],
+			"$portfolio/*": ["./src/lib/portfolio/*" ],
 		}
 	},
 }

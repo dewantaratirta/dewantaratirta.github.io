@@ -69,6 +69,7 @@ declare module '$env/static/private' {
 	export const npm_lifecycle_script: string;
 	export const npm_node_execpath: string;
 	export const npm_package_dependencies_mdsvex: string;
+	export const npm_package_dependencies_moment: string;
 	export const npm_package_dependencies_svelte_local_storage_store: string;
 	export const npm_package_dependencies_svelte_preprocess: string;
 	export const npm_package_dependencies__sveltejs_adapter_static: string;
@@ -200,6 +201,7 @@ declare module '$env/dynamic/private' {
 		npm_lifecycle_script: string;
 		npm_node_execpath: string;
 		npm_package_dependencies_mdsvex: string;
+		npm_package_dependencies_moment: string;
 		npm_package_dependencies_svelte_local_storage_store: string;
 		npm_package_dependencies_svelte_preprocess: string;
 		npm_package_dependencies__sveltejs_adapter_static: string;

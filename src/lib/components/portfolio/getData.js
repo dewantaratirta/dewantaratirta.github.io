@@ -1,9 +1,10 @@
-import { getAllContexts, onMount } from "svelte";
 
-const allPostFiles = import.meta.glob("$portfolio/*.md");
+// const allPostFiles = import.meta.glob("$portfolio/*.md");
+const allPostFiles = import.meta.glob("../../portfolio/*.md");
 const iterablePostFiles = Object.entries(allPostFiles);
 
-export let defaultImage = './img/placeholder.webp';
+const imgFolder = './portfolio/';
+export let defaultImage = imgFolder + "placeholder.webp";
 
 
 /**
@@ -16,13 +17,20 @@ export const getAllMetadata = async () => {
             let { metadata } = await resolver();
             let postSlug = path.split("/").pop().slice(0, -3);
 
+
+            let meta = metadata;
             // set default image
-            metadata.header_image = !metadata.header_image
-                ? defaultImage
-                : './portfolio/' + metadata.header_image;
+            if (metadata.header_image == false) {
+                meta.header_image = defaultImage;
+            } else {
+                if (!meta.header_image.includes(imgFolder)) {
+                    meta.header_image = imgFolder + meta.header_image;
+                }
+            }
+
 
             return {
-                meta: metadata,
+                meta: meta,
                 slug: postSlug,
             };
         })

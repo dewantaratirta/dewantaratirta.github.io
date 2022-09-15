@@ -1,6 +1,6 @@
 <script>
-	import { getAllMetadata } from '$components/portfolio/getData';
-	import Popup from '$components/portfolio/Popup.svelte';
+	import { getAllMetadata } from "$components/portfolio/getData";
+	import Popup from "$components/portfolio/Popup.svelte";
 
 	let popupComp;
 	let slug = null;
@@ -30,11 +30,12 @@
 
 <Popup show={popupShow} on:popupChange={eventHandler} bind:this={popupComp} />
 
-<div class="container">
+<div class="tab-container">
 	{#if data.length == 0}
 		Loading...
 	{:else}
-		<div class="row">
+		<h6>MY PROJECTS </h6>
+		<div class="row-grid">
 			{#each data as project}
 				<div
 					class="project-thumbnail"
@@ -42,7 +43,10 @@
 						popupHandlerEvent(project.meta.slug);
 					}}
 				>
-					<div class="image" style={`background-image: url(${project.meta.header_image})`} />
+					<div
+						class="image"
+						style={`background-image: url(${project.meta.header_image})`}
+					/>
 					<div class="card-body">
 						<h6>{project.meta.title}</h6>
 						<p>{project.meta.description}</p>
@@ -54,16 +58,6 @@
 </div>
 
 <style>
-	.container {
-		margin: 1.4em 0px;
-	}
-
-	.container .row {
-		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: 1.4em;
-	}
-
 	.project-thumbnail {
 		border-radius: var(--border-radius);
 		box-shadow: var(--card-box-shadow);
@@ -73,7 +67,7 @@
 	}
 
 	.project-thumbnail .card-body {
-		padding: calc(var(--bs-gutter-x) * 0.5);
+		padding:1rem;
 	}
 
 	.project-thumbnail .image {
@@ -95,22 +89,31 @@
 	}
 
 	@media (max-width: 767px) {
-		.container .row {
-			grid-template-columns: repeat(1, minmax(0, 1fr));
-		}
 		.project-thumbnail .image {
 			height: 15vmax;
 		}
 	}
 
-	:globalhtml[data-theme='light'] .project-thumbnail {
-		background: radial-gradient(circle at top left, hsl(205deg, 20%, 94%) 10%, #fff 90%);
+	:globalhtml[data-theme="light"] .project-thumbnail {
+		background: radial-gradient(
+			circle at top left,
+			hsl(205deg, 20%, 94%) 10%,
+			#fff 90%
+		);
 	}
 
-	:globalhtml[data-theme='dark'] .project-thumbnail {
-		background: radial-gradient(circle at top left, #18232c 10%, #141e26 90%);
+	:globalhtml[data-theme="dark"] .project-thumbnail {
+		background: radial-gradient(
+			circle at top left,
+			#18232c 10%,
+			#141e26 90%
+		);
 	}
-	:globalhtml[data-theme='dark'] .project-thumbnail:hover {
-		background: radial-gradient(circle at top left, hsl(205deg 29% 22%) 10%, #1f2d38 90%);
+	:globalhtml[data-theme="dark"] .project-thumbnail:hover {
+		background: radial-gradient(
+			circle at top left,
+			hsl(205deg 29% 22%) 10%,
+			#1f2d38 90%
+		);
 	}
 </style>

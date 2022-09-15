@@ -1,5 +1,7 @@
 <script>
     import ShowAll from "$components/portfolio/ShowAll.svelte";
+    import Experience from "$components/experience/experience.svelte";
+    import { fade } from "svelte/transition";
     import { onMount } from "svelte";
 
     let tab = {
@@ -58,9 +60,14 @@
 
     <div>
         {#if tab.portfolio.active == true}
-            <ShowAll />
-        {:else}
-            {JSON.stringify(tab)}
+            <div out:fade={{ duration: 200 }}>
+                <ShowAll />
+            </div>
+        {/if}
+        {#if tab.resume.active == true}
+            <div out:fade={{ duration: 200 }}>
+                <Experience />
+            </div>
         {/if}
     </div>
 </div>
