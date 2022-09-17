@@ -20,9 +20,9 @@
 		</li>
 	</ul>
 	<ul>
-		<li><a href="#" class="secondary">Examples</a></li>
+		<!-- <li><a href="#" class="secondary">Examples</a></li> -->
 		<li>
-			<a href="https://github.com/dewantaratirta" class="contrast" aria-label="Pico GitHub repository"
+			<a href="https://github.com/dewantaratirta" target="_blank" class="contrast" aria-label="Pico GitHub repository"
 				><svg
 					aria-hidden="true"
 					focusable="false"

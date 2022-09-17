@@ -1,6 +1,7 @@
 <script>
     import ShowAll from "$components/portfolio/ShowAll.svelte";
     import Experience from "$components/experience/experience.svelte";
+    import Contact from "$components/contact/contact.svelte";
     import { fade } from "svelte/transition";
     import { onMount } from "svelte";
 
@@ -67,6 +68,11 @@
         {#if tab.resume.active == true}
             <div out:fade={{ duration: 200 }}>
                 <Experience />
+            </div>
+        {/if}
+        {#if tab.contact.active == true}
+            <div out:fade={{ duration: 200 }}>
+                <Contact />
             </div>
         {/if}
     </div>

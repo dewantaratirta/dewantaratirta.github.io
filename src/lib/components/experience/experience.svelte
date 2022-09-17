@@ -16,6 +16,12 @@
             endDate: "2022/06/01",
         },
         {
+            position: "Freelance Web Developer",
+            location: `Yogyakarta`,
+            startDate: "2016/10/01",
+            endDate: "2018/04/01",
+        },
+        {
             position: "Project Lead",
             location: `CV. Interaktif Media Informatika, Yogyakarta`,
             startDate: "2016/03/01",
@@ -50,20 +56,22 @@
         <div class="row">
             <div class="col-4">
                 <span class="date"
+                    >{!data.endDate
+                        ? "Present"
+                        : moment(new Date(data.endDate)).format("MMM, YYYY")}
+                </span>
+
+                <code class="total_work">{formatTime(data.startDate, data.endDate)}</code>
+
+                <span class="date"
                     >{moment(new Date(data.startDate)).format(
                         "MMM, YYYY"
                     )}</span
                 >
-                <code>{formatTime(data.startDate, data.endDate)}</code>
-                <span class="date"
-                    >{!data.endDate
-                        ? "present"
-                        : moment(new Date(data.startDate)).format("MMM, YYYY")}
-                </span>
             </div>
             <div class="col-8">
-                <div>{data.position}</div>
-                <span>{data.location}</span>
+                <div class="position">{data.position}</div>
+                <span class="location">{data.location}</span>
             </div>
         </div>
     {/each}
@@ -92,9 +100,21 @@
         flex-direction: column;
         justify-content: center;
     }
-
     span.date {
         font-size: 0.75rem;
         line-height: 1rem;
+    }
+    code.total_work{
+        padding:4px 6px;
+        font-size: 0.7rem;
+        margin:4px 0px;
+    }
+
+    .position{
+        font-weight: 600;
+    }
+    .location{
+        font-weight: 400;
+        font-size:.9rem;
     }
 </style>

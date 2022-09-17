@@ -86,6 +86,7 @@ const ProfileHeader = create_ssr_component(($$result, $$props, $$bindings, slots
 const Popup_svelte_svelte_type_style_lang = "";
 const ShowAll_svelte_svelte_type_style_lang = "";
 const experience_svelte_svelte_type_style_lang = "";
+const contact_svelte_svelte_type_style_lang = "";
 const ProfileBody_svelte_svelte_type_style_lang = "";
 const css$1 = {
   code: ".body.svelte-1i16ooj.svelte-1i16ooj{padding:calc(var(--block-spacing-vertical) * 0.66)\r\n            var(--block-spacing-horizontal);margin:0px 10px}ul.svelte-1i16ooj li.svelte-1i16ooj{color:var(--secondary);border-bottom:4px solid transparent;transition:1s color, 1s border;cursor:pointer;margin-right:10px}ul.svelte-1i16ooj li.svelte-1i16ooj:hover:not(.active){color:var(--secondary-hover);border-bottom:4px solid var(--secondary-hover)}ul.svelte-1i16ooj li.active.svelte-1i16ooj{color:var(--h3-color);border-bottom:4px solid var(--h3-color)}",
@@ -98,6 +99,7 @@ const ProfileBody = create_ssr_component(($$result, $$props, $$bindings, slots) 
             <li class="${escape(null_to_empty(""), true) + " svelte-1i16ooj"}"><strong>Contact</strong></li></ul></nav>
 
     <div>${``}
+        ${``}
         ${``}</div>
 </div>`;
 });
