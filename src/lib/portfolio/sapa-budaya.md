@@ -7,19 +7,14 @@ header_image: "sapa-budaya.jpg"
 link: "http://sapabudaya.jogjakota.go.id/"
 layout: basemd
 ---
-<script>
-	import GenerateTags from "$components/GenerateTags.svelte";
-	let tags = ["JavaScript", "PHP", 'react', "fullstack"];
-</script>
 
-![alt text](/portfolio/sapa-budaya.jpg "Title")
 
-<div>
-<GenerateTags {tags}/>
-</div>
+# Sapabudaya
 
-# Hello world
+Sapabudaya is a local social network to share knowledge, experience and culture to broaden the knowledge of Indonesian people.
 
-Hello, I am _Post One._
+Through this application, we can get to know and connect with the local community in our area.
 
-**Nice to meet you!**
+![alt text](/portfolio/sb_2.png "SapaBudaya")
+
+![alt text](/portfolio/sapa-budaya.jpg "SapaBudaya")

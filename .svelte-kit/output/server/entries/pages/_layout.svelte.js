@@ -1,5 +1,5 @@
 import { g as get_store_value, c as create_ssr_component, b as add_attribute, v as validate_component } from "../../chunks/index.js";
-import { w as writable$1 } from "../../chunks/index2.js";
+import { w as writable$1 } from "../../chunks/index3.js";
 var stores = {};
 function writable(key, initialValue, options) {
   const browser = typeof localStorage != "undefined" && typeof window != "undefined";

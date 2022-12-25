@@ -1,12 +1,12 @@
 {
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-063af66d.js",
+    "file": "_app/immutable/start-4500e925.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_preload-helper-aa6bc0ce.js",
       "_index-4ed68ad2.js",
-      "_singletons-d825c4fd.js"
+      "_singletons-4b916105.js"
     ],
     "dynamicImports": [
       ".svelte-kit/generated/nodes/0.js",
@@ -15,7 +15,7 @@
     ]
   },
   "src/routes/+layout.svelte": {
-    "file": "_app/immutable/components/pages/_layout.svelte-e51f1dc9.js",
+    "file": "_app/immutable/components/pages/_layout.svelte-b380e209.js",
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
@@ -27,25 +27,34 @@
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-e0d639f2.js",
+    "file": "_app/immutable/components/error.svelte-ff83e6f9.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
       "_index-4ed68ad2.js",
-      "_singletons-d825c4fd.js"
+      "_singletons-4b916105.js"
     ]
   },
   "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-9dda071f.js",
+    "file": "_app/immutable/components/pages/_page.svelte-1738edc9.js",
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-4ed68ad2.js",
-      "__page-7d1a2986.js"
+      "_preload-helper-aa6bc0ce.js"
+    ],
+    "dynamicImports": [
+      "src/lib/portfolio/adira-finance.md",
+      "src/lib/portfolio/eduka5eks.md",
+      "src/lib/portfolio/infest-inkubasi.md",
+      "src/lib/portfolio/sapa-budaya.md"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-0bd51ed0.css"
     ]
   },
-  "_singletons-d825c4fd.js": {
-    "file": "_app/immutable/chunks/singletons-d825c4fd.js",
+  "_singletons-4b916105.js": {
+    "file": "_app/immutable/chunks/singletons-4b916105.js",
     "imports": [
       "_index-990a9927.js"
     ]
@@ -62,23 +71,8 @@
       "_index-4ed68ad2.js"
     ]
   },
-  "__page-7d1a2986.js": {
-    "file": "_app/immutable/chunks/_page-7d1a2986.js",
-    "imports": [
-      "_index-4ed68ad2.js",
-      "_preload-helper-aa6bc0ce.js"
-    ],
-    "dynamicImports": [
-      "src/lib/portfolio/adira-finance.md",
-      "src/lib/portfolio/infest-inkubasi.md",
-      "src/lib/portfolio/sapa-budaya.md"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-a27afbd5.css"
-    ]
-  },
   ".svelte-kit/generated/nodes/0.js": {
-    "file": "_app/immutable/chunks/0-223766de.js",
+    "file": "_app/immutable/chunks/0-2f432e86.js",
     "src": ".svelte-kit/generated/nodes/0.js",
     "isDynamicEntry": true,
     "imports": [
@@ -86,7 +80,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-95596063.js",
+    "file": "_app/immutable/chunks/1-4e82bb8e.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -94,32 +88,32 @@
     ]
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-d003b73b.js",
+    "file": "_app/immutable/chunks/2-38935393.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-7d1a2986.js"
+      "src/routes/+page.svelte"
     ]
   },
   "src/lib/portfolio/adira-finance.md": {
-    "file": "_app/immutable/chunks/adira-finance-57e8ab04.js",
+    "file": "_app/immutable/chunks/adira-finance-dc1eb3ed.js",
     "src": "src/lib/portfolio/adira-finance.md",
     "isDynamicEntry": true,
     "imports": [
       "_index-4ed68ad2.js"
     ]
   },
-  "src/lib/portfolio/infest-inkubasi.md": {
-    "file": "_app/immutable/chunks/infest-inkubasi-6fb2ce6b.js",
-    "src": "src/lib/portfolio/infest-inkubasi.md",
+  "src/lib/portfolio/eduka5eks.md": {
+    "file": "_app/immutable/chunks/eduka5eks-ddf8e388.js",
+    "src": "src/lib/portfolio/eduka5eks.md",
     "isDynamicEntry": true,
     "imports": [
       "_index-4ed68ad2.js",
-      "_layout-5836339d.js"
+      "_layout-5cdf5d3e.js"
     ]
   },
-  "_layout-5836339d.js": {
-    "file": "_app/immutable/chunks/layout-5836339d.js",
+  "_layout-5cdf5d3e.js": {
+    "file": "_app/immutable/chunks/layout-5cdf5d3e.js",
     "imports": [
       "_index-4ed68ad2.js"
     ],
@@ -127,26 +121,35 @@
       "_app/immutable/assets/layout-f2ef02fe.css"
     ]
   },
+  "src/lib/portfolio/infest-inkubasi.md": {
+    "file": "_app/immutable/chunks/infest-inkubasi-3f39f504.js",
+    "src": "src/lib/portfolio/infest-inkubasi.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-4ed68ad2.js",
+      "_layout-5cdf5d3e.js",
+      "src/routes/+page.svelte"
+    ]
+  },
   "src/lib/portfolio/sapa-budaya.md": {
-    "file": "_app/immutable/chunks/sapa-budaya-7f6126c0.js",
+    "file": "_app/immutable/chunks/sapa-budaya-6da1ab13.js",
     "src": "src/lib/portfolio/sapa-budaya.md",
     "isDynamicEntry": true,
     "imports": [
       "_index-4ed68ad2.js",
-      "_layout-5836339d.js",
-      "__page-7d1a2986.js"
+      "_layout-5cdf5d3e.js"
     ]
   },
   "src/routes/+layout.css": {
     "file": "_app/immutable/assets/_layout-6836dd1c.css",
     "src": "src/routes/+layout.css"
   },
+  "src/routes/+page.css": {
+    "file": "_app/immutable/assets/_page-0bd51ed0.css",
+    "src": "src/routes/+page.css"
+  },
   "layout.css": {
     "file": "_app/immutable/assets/layout-f2ef02fe.css",
     "src": "layout.css"
-  },
-  "_page.css": {
-    "file": "_app/immutable/assets/_page-a27afbd5.css",
-    "src": "_page.css"
   }
 }

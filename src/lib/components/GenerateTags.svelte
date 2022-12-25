@@ -76,6 +76,33 @@
 		flex-direction: row;
 		align-items: center;
 		background: var(--card-background-color);
+		position: relative;
+		overflow: hidden;
+	}
+	.tag::after{
+		display:block;
+		width:120%;
+		height:100%;
+		content:'';
+		position: absolute;
+		/* background: rgb(255,255,255); */
+		background: linear-gradient(90deg, rgba(255,255,255,0.05) 0%, var(--secondary-focus) 50%, rgba(255,255,255,0.05) 100%);
+		/* background-color: rgba(240, 248, 255, 0.055); */
+		/* background-color: var(--secondary-focus); */
+		transform: skew(315deg, 0deg);
+		left:-150%;
+		transition: left 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+		opacity: .8;
+	}
+	.tag:hover::after{
+		left:150%;
+	}
+
+	.tag span{
+		transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+	}
+	.tag:hover span{
+		color:var(--h2-color);
 	}
 	.tag.has-icon span {
 		margin-left: 5px;

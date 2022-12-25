@@ -1,8 +1,7 @@
 import { c as create_ssr_component, f as escape, h as each, v as validate_component, i as null_to_empty } from "../../chunks/index.js";
-import "moment";
-const GenerateTags_svelte_svelte_type_style_lang = "";
+/* empty css                                                       */import "moment";
 const css$3 = {
-  code: ".tag.svelte-1t15so3.svelte-1t15so3{border:1px solid var(--secondary-focus);border-radius:20px;margin:5px;padding:2px 12px;font-size:12px;line-height:16px;height:28px;display:inline-flex;align-content:center;justify-content:center;flex-direction:row;align-items:center;background:var(--card-background-color)}.tag.has-icon.svelte-1t15so3 span.svelte-1t15so3{margin-left:5px}.tags-container.svelte-1t15so3.svelte-1t15so3{display:flex;flex-wrap:wrap}@media(max-width: 600px){.tags-container.svelte-1t15so3.svelte-1t15so3{width:100%;display:flex;align-content:center;align-items:center}.tags-container.mobile-center.svelte-1t15so3.svelte-1t15so3{justify-content:center}}",
+  code: ".tag.svelte-8kdj8a.svelte-8kdj8a{border:1px solid var(--secondary-focus);border-radius:20px;margin:5px;padding:2px 12px;font-size:12px;line-height:16px;height:28px;display:inline-flex;align-content:center;justify-content:center;flex-direction:row;align-items:center;background:var(--card-background-color);position:relative;overflow:hidden}.tag.svelte-8kdj8a.svelte-8kdj8a::after{display:block;width:120%;height:100%;content:'';position:absolute;background:linear-gradient(90deg, rgba(255,255,255,0.05) 0%, var(--secondary-focus) 50%, rgba(255,255,255,0.05) 100%);transform:skew(315deg, 0deg);left:-150%;transition:left 1s cubic-bezier(0.075, 0.82, 0.165, 1);opacity:.8}.tag.svelte-8kdj8a.svelte-8kdj8a:hover::after{left:150%}.tag.svelte-8kdj8a span.svelte-8kdj8a{transition:color 1s cubic-bezier(0.075, 0.82, 0.165, 1)}.tag.svelte-8kdj8a:hover span.svelte-8kdj8a{color:var(--h2-color)}.tag.has-icon.svelte-8kdj8a span.svelte-8kdj8a{margin-left:5px}.tags-container.svelte-8kdj8a.svelte-8kdj8a{display:flex;flex-wrap:wrap}@media(max-width: 600px){.tags-container.svelte-8kdj8a.svelte-8kdj8a{width:100%;display:flex;align-content:center;align-items:center}.tags-container.mobile-center.svelte-8kdj8a.svelte-8kdj8a{justify-content:center}}",
   map: null
 };
 const GenerateTags = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -61,9 +60,9 @@ const GenerateTags = create_ssr_component(($$result, $$props, $$bindings, slots)
   if ($$props.mobileCenter === void 0 && $$bindings.mobileCenter && mobileCenter !== void 0)
     $$bindings.mobileCenter(mobileCenter);
   $$result.css.add(css$3);
-  return `${tags.length > 0 ? `<div class="${"tags-container " + escape(mobileCenter ? "mobile-center" : "", true) + " svelte-1t15so3"}">${each(tags, (tag) => {
-    return `${taglist.hasOwnProperty(tag) ? `<code class="${"tag has-icon svelte-1t15so3"}"><!-- HTML_TAG_START -->${taglist[tag].icon}<!-- HTML_TAG_END -->
-					<span class="${"svelte-1t15so3"}">${escape(taglist[tag].alias)}</span></code>` : `<code class="${"tag svelte-1t15so3"}"><span>#${escape(tag)}</span></code>`}`;
+  return `${tags.length > 0 ? `<div class="${"tags-container " + escape(mobileCenter ? "mobile-center" : "", true) + " svelte-8kdj8a"}">${each(tags, (tag) => {
+    return `${taglist.hasOwnProperty(tag) ? `<code class="${"tag has-icon svelte-8kdj8a"}"><!-- HTML_TAG_START -->${taglist[tag].icon}<!-- HTML_TAG_END -->
+					<span class="${"svelte-8kdj8a"}">${escape(taglist[tag].alias)}</span></code>` : `<code class="${"tag svelte-8kdj8a"}"><span class="${"svelte-8kdj8a"}">#${escape(tag)}</span></code>`}`;
   })}</div>` : ``}`;
 });
 const ProfileHeader_svelte_svelte_type_style_lang = "";
@@ -73,11 +72,11 @@ const css$2 = {
 };
 const ProfileHeader = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let tags = ["php", "js", "fullstack"];
-  let framework = ["ci", "vue", "reactjs", "reactnative", "svelte", "jquery"];
+  let framework = ["ci", "vue", "reactjs", "reactnative", "svelte"];
   $$result.css.add(css$2);
   return `<header class="${"svelte-a4i0e8"}"><div class="${"left svelte-a4i0e8"}"><hgroup class="${"heading svelte-a4i0e8"}"><h2 class="${"svelte-a4i0e8"}">Dewantara Tirta Putra</h2>
-			<p class="${"svelte-a4i0e8"}">Hello, im passionate web developer based on Yogyakarta.<br>
-				<code class="${"text-alt svelte-a4i0e8"}">Currently Working as Backend Engineer @ ICUBE by Sirclo</code></p>
+			<p class="${"svelte-a4i0e8"}">Hello! I&#39;m a web developer based in Yogyakarta, Indonesia. I love to code, design and create websites and applications.<br>
+				<code class="${"text-alt svelte-a4i0e8"}">Currently Working as Fullstack Engineer @ ICUBE by Sirclo</code></p>
 				${validate_component(GenerateTags, "GenerateTags").$$render($$result, { tags, mobileCenter: true }, {}, {})}
 				${validate_component(GenerateTags, "GenerateTags").$$render($$result, { tags: framework, mobileCenter: true }, {}, {})}</hgroup></div>
 	<div class="${"right svelte-a4i0e8"}"><img src="${"img/pp.webp"}" alt="${""}" class="${"svelte-a4i0e8"}"></div>

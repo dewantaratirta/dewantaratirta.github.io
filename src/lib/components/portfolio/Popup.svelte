@@ -24,6 +24,7 @@
 	};
 
 	export const open = async (slugName) => {
+		console.log(slugName)
 		slug = slugName;
 		console.log(slug);
 		show = 1;

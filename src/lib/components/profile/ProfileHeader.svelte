@@ -1,7 +1,7 @@
 <script>
 	import GenerateTags from "$components/GenerateTags.svelte";
 	let tags = ["php", "js", "fullstack"];
-	let framework = ["ci", "vue", "reactjs", 'reactnative', 'svelte', 'jquery'];
+	let framework = ["ci", "vue", "reactjs", 'reactnative', 'svelte'];
 </script>
 
 <header>
@@ -9,9 +9,9 @@
 		<hgroup class="heading">
 			<h2>Dewantara Tirta Putra</h2>
 			<p>
-				Hello, im passionate web developer based on Yogyakarta.<br />
+				Hello! I'm a web developer based in Yogyakarta, Indonesia. I love to code, design and create websites and applications.<br />
 				<code class="text-alt"
-					>Currently Working as Backend Engineer @ ICUBE by Sirclo</code
+					>Currently Working as Fullstack Engineer @ ICUBE by Sirclo</code
 				>
 			</p>
 				<GenerateTags {tags} mobileCenter={true} />
