@@ -1,5 +1,5 @@
 <script>
-  //   import { getAllMetadata } from "$components/portfolio/getData";
+    import { getAllMetadata } from "$components/portfolio/getData";
   import Popup from "$components/portfolio/Popup.svelte";
   import { onMount } from "svelte";
 
@@ -7,9 +7,9 @@
   let slug = null;
   var data = [];
 
-  //   getAllMetadata().then((res) => {
-  //     data = res;
-  //   });
+    getAllMetadata().then((res) => {
+      data = res;
+    });
 
   const popupHandlerEvent = (popupslug) => {
     slug = popupslug;
@@ -23,21 +23,20 @@
   const eventHandler = (e) => {
     popupShow = e.detail.show;
     slug = e.detail.slug;
-    console.log(e.detail);
   };
 
   /**
    * @ HOOK
    */
-  onMount(async () => {
-    const base_url = window.location.origin + "/";
-    const api_url = base_url + "api/all_post";
-    let x = await fetch(api_url)
-      .then((response) => response.json())
-      .then((d) => {
-        data = d;
-      });
-  });
+  // onMount(async () => {
+  //   const base_url = window.location.origin + "/";
+  //   const api_url = base_url + "api/all_post";
+  //   let x = await fetch(api_url)
+  //     .then((response) => response.json())
+  //     .then((d) => {
+  //       data = d;
+  //     });
+  // });
 
   let popupShow = 0;
 </script>
