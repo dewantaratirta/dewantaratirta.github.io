@@ -1,12 +1,12 @@
 {
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-4500e925.js",
+    "file": "_app/immutable/start-8d6de97d.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_preload-helper-aa6bc0ce.js",
       "_index-4ed68ad2.js",
-      "_singletons-4b916105.js"
+      "_singletons-281056cf.js"
     ],
     "dynamicImports": [
       ".svelte-kit/generated/nodes/0.js",
@@ -27,12 +27,12 @@
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-ff83e6f9.js",
+    "file": "_app/immutable/components/error.svelte-9f62cb59.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
       "_index-4ed68ad2.js",
-      "_singletons-4b916105.js"
+      "_singletons-281056cf.js"
     ]
   },
   "src/routes/+page.svelte": {
@@ -53,8 +53,8 @@
       "_app/immutable/assets/_page-0bd51ed0.css"
     ]
   },
-  "_singletons-4b916105.js": {
-    "file": "_app/immutable/chunks/singletons-4b916105.js",
+  "_singletons-281056cf.js": {
+    "file": "_app/immutable/chunks/singletons-281056cf.js",
     "imports": [
       "_index-990a9927.js"
     ]
@@ -80,7 +80,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-4e82bb8e.js",
+    "file": "_app/immutable/chunks/1-372008c7.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -144,12 +144,12 @@
     "file": "_app/immutable/assets/_layout-6836dd1c.css",
     "src": "src/routes/+layout.css"
   },
-  "src/routes/+page.css": {
-    "file": "_app/immutable/assets/_page-0bd51ed0.css",
-    "src": "src/routes/+page.css"
-  },
   "layout.css": {
     "file": "_app/immutable/assets/layout-f2ef02fe.css",
     "src": "layout.css"
+  },
+  "src/routes/+page.css": {
+    "file": "_app/immutable/assets/_page-0bd51ed0.css",
+    "src": "src/routes/+page.css"
   }
 }
